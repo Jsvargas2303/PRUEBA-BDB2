@@ -1,0 +1,19 @@
+CREATE DATABASE IF NOT EXISTS person;
+
+USE company;
+
+CREATE TABLE person (
+  id INT(11) NOT NULL AUTO_INCREMENT,
+  name VARCHAR(45) DEFAULT NULL,
+  birth date DEFAULT NULL, 
+  PRIMARY KEY(id)
+);
+
+DESCRIBE person;
+
+INSERT INTO person values 
+  (1, 'PERSON TEST', 19960606),
+  (2, 'PERSON TEST 2', 19960606),
+  (3, 'PERSON TEST 3', 19960606);
+
+SELECT * FROM person;
